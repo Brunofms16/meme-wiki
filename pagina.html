@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <h1>MEME-WiKi</h1>
+          </div>
+          <div class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="sobre.html">Redes Sociais</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contato</a></li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+       
+    </header>
+
+    <div class="container">
+   
+
+<div class="wrapper" id="menus">
+    <h1>Seletor de personagem</h1>
+<h2>Selecione seu personagem preferido e descubra suas habilidades e caracteristicas
+</h2>
+    
+        <div class="box" onclick="escrever1()"><p> Ednaldo Pereira</div>
+        <div class="box" onclick="escrever2()"><p> Arvore Mistica </div>
+        <div class="box" onclick="escrever3()"><p> Nal do Canal</div>
+        <div class="box" onclick="escrever4()"><p> wenomechinthesama</div>
+      
+</div>
+  
+    <section id="person">
+       
+    </section>
+    <div id="Habil">
+<h1></h1>
+    </div>
+
+        <section id="sobre">
+<input type="button" value="Voltar" style="width: 100px;
+height: 30px;
+color: white;
+background-color:  rgb(30, 106, 219);
+border-radius: 30px;" onclick="location.reload()">
+        </section>
+    </div>
+
+
+    <script>
+
+
+const sobre = document.getElementById("sobre")
+const person = document.getElementById("person")
+const menus = document.getElementById("menus")
+const habil = document.getElementById("habil")
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', function() {
+	menuIcon.classList.toggle('active');
+	menu.classList.toggle('active');
+});
+
+        function escrever1() {
+         
+            menus.innerHTML = ``
+sobre.innerHTML = `<p style="width: 100%;
+text-align: center;
+height: 400px;
+width:80%;
+font-wheigth:bolder;
+margin : 0 auto;
+">Ednaldo Pereira da Silva é a luz para o cego, é a cura pro enfermo ,é tudo de bom
+
+Ednaldo Pereira da Silva, mais conhecido como Ednaldo Pereira ,nascido em 1974 tendo 48 anos hoje (2022), é um cantor e compositor brasileiro conhecido por suas músicas e seu carisma. Devido as suas músicas, Ednaldo virou uma das celebridades da Internet, chegando a participar de programas como o Programa da Eliana e Ridículos da Record. Ele também é conhecido por seu bordão:"Ednaldo Pereira" e por suas músicas: "Vale Nada Vale Tudo" e "What Is The Brother". Hoje em dia ele conta com cerca de 1 milhão de seguidores juntando todas as suas redes sociais, e um dia ele conheceu Cazum8.</p><br><h1>Habilidades</h1><p id="hab">   HP :999 
+    <br>
+       PP : 999
+    <br>
+       DEF :999
+    <br>
+       ESP: BANIDO (999999-dano)
+</p><BR><BR>  <input type="button" value="Voltar" style="width: 100px;
+height: 30px;
+color: white;
+background-color:  rgb(30, 106, 219);
+border-radius: 30px;" onclick="location.reload()">`
+
+
+
+person.innerHTML = `<p style="font-wheigth:bold;
+ font-size:20px;
+ text-align: center;
+ padding-bottom:20px;
+ padding-top:20px"><strong>Ednaldo Pereira</p>
+
+ 
+ 
+
+ 
+ <img 
+style="
+width:200px;
+heigth : 200px;
+margin: 0 auto;
+padding-bottom : 30px;
+
+"
+ src="https://images.genius.com/763dbdddddff187ee69e09ee1671388e.720x720x1.jpg"alt="imagem">
+ 
+ <br>
+
+
+ `
+  habil.innerHTML = `<h1>Habilidades</h1>`
+        }
+
+        function escrever2() {
+        
+            menus.innerHTML = ``
+sobre.innerHTML = `<p style="width: 100%;
+text-align: center;
+height: 400px;
+width:90%;
+font-wheigth:bolder;
+margin : 0 auto;
+">
+É uma entidade mágica antiga e poderosa, que tem o domínio sobre a natureza e os elementos. Seus longos braços são capazes de controlar as correntes de ar e produzir ventos fortes e tempestades. Sua aura mística lhe permite curar feridas e doenças com o poder da natureza e criar uma atmosfera de paz e tranquilidade ao seu redor.
+Além disso, a árvore é capaz de se comunicar com todas as criaturas da floresta e até mesmo ler as mentes dos seres humanos. Ela é considerada uma guardiã dos segredos e mistérios da natureza, sendo capaz de conceder visões e insights profundos para aqueles que a buscam com sinceridade.
+
+.</p><br><h1>Habilidades</h1><p id="hab">   HP :999 
+    <br>
+       PP : 100
+    <br>
+       DEF : infinty
+    <br>
+       ESP: Sabedoria (identifica qualquer ponto fraco do inimigo)
+<br>
+
+FRAQUEZA : Vulneravel a ataques de tipo fogo
+</p><BR><BR> <input type="button" value="Voltar" style="width: 100px;
+height: 30px;
+color: white;
+background-color:  rgb(30, 106, 219);
+border-radius: 30px ; margin : 0 auto ;" onclick="location.reload()">`
+
+person.innerHTML = `<p style="font-wheigth:bold;
+ font-size:20px;
+ text-align: center;
+ padding-bottom:20px;
+ padding-top:20px"><strong>Arvore Mistica</p>
+
+ 
+ <img 
+style="
+width:200px;
+heigth : 200px;
+margin: 0 auto;
+padding-bottom : 30px;
+
+"
+ src="https://i.pinimg.com/280x280_RS/a5/61/56/a56156f447bb0969126f1acc35bc1d52.jpg"alt="imagem">
+ 
+ <br>
+
+ 
+ ` }
+        
+
+
+
+
+function escrever3() 
+{
+        
+        menus.innerHTML = ``
+sobre.innerHTML = `<p style="width: 100%;
+text-align: center;
+height: 400px;
+width:90%;
+font-wheigth:bolder;
+margin : 0 auto;
+">
+Nal do Canal é um filósofo, matador de pokémon, pinguço, youtuber e Deus que mora nos cafundilhos da Bahia e veio para o mundo para matar todos os pecadores, hereges, jogadores de Free Fire (chamado de Fron Fraire por Nal) e veio para matar um tal de "Otizap" (Whatsapp na linguagem humanamente avançada utilizada por Nal).<br>
+Sendo um ser de tamanho poder, óbviamente Nal tem várias rivalidades, como são muitas então só vamos citar algumas aqui.
+<br>
+<br>
+<strong>Pikómon (ou Pokémon)<strong>
+<br>
+<strong>Fron Fraire (ou Free Fire)<strong>
+<br>
+<strong>Caneta Azul(Manoel Gomes)<strong>
+</p><br><h1>Habilidades</h1><p id="hab">   HP :999 
+<br>
+   PP : 250
+<br>
+   DEF : 370
+<br>
+   ESP: Furia (furia descontrolavel para matar qualquer Pikomon)
+<br>
+
+FRAQUEZA : Vulneravel a ataques emocionais
+</p><BR><BR>  <input type="button" value="Voltar" style="width: 100px;
+height: 30px;
+color: white;
+background-color:  rgb(30, 106, 219);
+border-radius: 30px;" onclick="location.reload()">`
+
+person.innerHTML = `<p style="font-wheigth:bold;
+font-size:20px;
+text-align: center;
+padding-bottom:20px;
+padding-top:20px"><strong>Nal do Canal</p>
+
+
+<img 
+style="
+width:200px;
+heigth : 200px;
+margin: 0 auto;
+padding-bottom : 30px;
+
+"
+src="data:image/jpeg;base64,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"alt="imagem">
+
+<br>
+` }
+
+
+function escrever4() 
+{
+        
+        menus.innerHTML = ``
+sobre.innerHTML = `<p style="width: 100%;
+text-align: center;
+height: 190px;
+width:90%;
+font-wheigth:bolder;
+margin : 0 auto;
+">
+É uma entidade peculiar que encanta a todos com sua musica e seu imenso poder , pouco ja o viram na vida real e sua presença neste mundo é um misterio , mesmo assim é um dos memes shitpost mais queridos e conseguiu derrotar seu maior rival o meme Doge e tomar seu trono como um dos ADMs da internet.
+
+.</p><br><h1>Habilidades</h1><p id="hab">   HP :999 
+<br>
+   PP : 999
+<br>
+   DEF : 999
+<br>
+   ESP: Canto (Derrota qualquer inimigo com sua musica)
+<br>
+
+FRAQUEZA : Vulneravel a ataques de Turi ip ip ip
+</p><BR><BR> <input type="button" value="Voltar" style="width: 100px;
+height: 30px;
+color: white;
+background-color:  rgb(30, 106, 219);
+border-radius: 30px; "onclick="location.reload()" >`
+
+person.innerHTML = `<p style="font-wheigth:bold;
+font-size:20px;
+text-align: center;
+padding-bottom:20px;
+padding-top:20px"><strong>wenamechindesama </p>
+
+
+<img 
+style="
+width:200px;
+heigth : 200px;
+margin: 0 auto;
+padding-bottom : 30px;
+
+"
+src="data:image/jpeg;base64,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"alt="imagem">
+
+<br>
+` }
+
+    </script>
+</body>
+</html>
